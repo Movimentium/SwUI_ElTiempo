@@ -33,8 +33,16 @@ enum DiaSemana: Int {
 
 enum IcoTiempo: String {
     case sol = "sun.max.fill"
-    case lluvia = "cloud.fog.fill"
-    case nieve = "cloud.drizzle.fill"
+    case niebla = "cloud.fog.fill"
+    case lluvia = "cloud.drizzle.fill"
+    
+    var color: Color {
+        switch self {
+        case .sol:     return .orange
+        case .niebla:  return .gray
+        case .lluvia:  return .blue
+        }
+    }
 }
 
 struct DiaTiempoData: Hashable {
@@ -52,8 +60,8 @@ class DataModel {
     static let data: [DiaTiempoData] = [
         DiaTiempoData(diaSem: .lun, max: 27, min: 15, ico: .sol),
         DiaTiempoData(diaSem: .mar, max: 24, min: 17, ico: .sol),
-        DiaTiempoData(diaSem: .mie, max: 15, min: 10, ico: .nieve),
-        DiaTiempoData(diaSem: .jue, max: 22, min: 16, ico: .lluvia),
+        DiaTiempoData(diaSem: .mie, max: 15, min: 10, ico: .lluvia),
+        DiaTiempoData(diaSem: .jue, max: 22, min: 16, ico: .niebla),
         DiaTiempoData(diaSem: .vie, max: 23, min: 18, ico: .sol),
         DiaTiempoData(diaSem: .sab, max: 27, min: 17, ico: .sol),
         DiaTiempoData(diaSem: .dom, max: 26, min: 15, ico: .sol)

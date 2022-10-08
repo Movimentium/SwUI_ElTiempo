@@ -15,6 +15,7 @@ struct ContentView: View {
                 HStack {
                     let strDia = item.diaSem.str
                     Image(systemName: item.ico.rawValue)
+                        .foregroundColor(item.ico.color)
                     Text("\(item.max)°")
                         .foregroundColor(.red)
                     Text("\(item.min)°")

@@ -21,6 +21,7 @@ struct DetalleVw: View {
             Image(systemName: dataItem.ico.rawValue)
                 .padding([.leading, .bottom, .trailing], 8.0)
                 .font(.largeTitle)
+                .foregroundColor(dataItem.ico.color)
             HStack {
                 Text("\(dataItem.max)°")
                     .foregroundColor(.red)
