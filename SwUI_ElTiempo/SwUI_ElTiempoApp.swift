@@ -2,7 +2,7 @@
 //  SwUI_ElTiempoApp.swift
 //  SwUI_ElTiempo
 //
-//  Created by Miguel on 8/10/22.
+//  Created by Miguel Gallego on 8/10/22.
 //
 
 import SwiftUI

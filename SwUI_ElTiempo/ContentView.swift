@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SwUI_ElTiempo
 //
-//  Created by Miguel on 8/10/22.
+//  Created by Miguel on Gallego 8/10/22.
 //
 
 import SwiftUI
