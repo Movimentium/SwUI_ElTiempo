@@ -12,6 +12,8 @@
 		0C7FB99528F111FA00A68976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FB99428F111FA00A68976 /* Assets.xcassets */; };
 		0C7FB99828F111FA00A68976 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7FB99728F111FA00A68976 /* Preview Assets.xcassets */; };
 		0C7FB99F28F1123200A68976 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FB99E28F1123200A68976 /* DataModel.swift */; };
+		0C7FB9A128F11D4F00A68976 /* DetalleVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FB9A028F11D4F00A68976 /* DetalleVw.swift */; };
+		0C7FB9A328F1266C00A68976 /* MasInfoVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7FB9A228F1266C00A68976 /* MasInfoVw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		0C7FB99428F111FA00A68976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C7FB99728F111FA00A68976 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C7FB99E28F1123200A68976 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		0C7FB9A028F11D4F00A68976 /* DetalleVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleVw.swift; sourceTree = "<group>"; };
+		0C7FB9A228F1266C00A68976 /* MasInfoVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasInfoVw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				0C7FB99028F111F700A68976 /* SwUI_ElTiempoApp.swift */,
 				0C7FB99E28F1123200A68976 /* DataModel.swift */,
 				0C7FB99228F111F700A68976 /* ContentView.swift */,
+				0C7FB9A028F11D4F00A68976 /* DetalleVw.swift */,
+				0C7FB9A228F1266C00A68976 /* MasInfoVw.swift */,
 				0C7FB99428F111FA00A68976 /* Assets.xcassets */,
 				0C7FB99628F111FA00A68976 /* Preview Content */,
 			);
@@ -142,6 +148,8 @@
 			files = (
 				0C7FB99328F111F700A68976 /* ContentView.swift in Sources */,
 				0C7FB99128F111F700A68976 /* SwUI_ElTiempoApp.swift in Sources */,
+				0C7FB9A328F1266C00A68976 /* MasInfoVw.swift in Sources */,
+				0C7FB9A128F11D4F00A68976 /* DetalleVw.swift in Sources */,
 				0C7FB99F28F1123200A68976 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

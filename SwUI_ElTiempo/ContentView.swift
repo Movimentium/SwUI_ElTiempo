@@ -2,23 +2,25 @@
 //  ContentView.swift
 //  SwUI_ElTiempo
 //
-//  Created by Miguel on Gallego 8/10/22.
+//  Created by Miguel Gallego on 8/10/22.
 //
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct ContentView: View {
-    let sGrads = "°"
     var body: some View {
         NavigationView {
             List(DataModel.data, id: \.self) { item in
                 HStack {
+                    let strDia = item.diaSem.str
                     Image(systemName: item.ico.rawValue)
-                    Text("\(item.max)\(sGrads)")
+                    Text("\(item.max)°")
                         .foregroundColor(.red)
-                    Text("\(item.min)\(sGrads)")
+                    Text("\(item.min)°")
                         .foregroundColor(.blue)
-                    Text("\(item.diaSem.str)")
+                    Text("\(strDia)")
+                    NavigationLink(strDia, destination: DetalleVw(dataItem: item))
                 }
             }
             .navigationTitle("Madrid")
@@ -26,6 +28,7 @@ struct ContentView: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -33,6 +36,4 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
-/*
- °" ( i.e degree symbol)? using built in Cocoa utility (with NSAttributedString) [duplicate]
- */
+

@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+@available(iOS 15.0, *)
 struct SwUI_ElTiempoApp: App {
     var body: some Scene {
         WindowGroup {
